@@ -95,6 +95,15 @@ public class SettingActivity extends BaseActivity {
                 return true;
             }
         });
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+//                    jumpAct(MainActivity.class, true);
+//                    overridePendingTransition(0, 0);
+
+            }
+        });
         ll_about.setOnClickListener(this);
         ll_blog.setOnClickListener(this);
         ll_gg.setOnClickListener(this);

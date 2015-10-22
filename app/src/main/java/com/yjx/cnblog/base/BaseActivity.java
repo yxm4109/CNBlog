@@ -81,6 +81,7 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
      */
     protected void jumpAct(Class clazz, boolean isfinish) {
         Intent intent = new Intent(this, clazz);
+        intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
         startActivity(intent);
         if (isfinish) {
             this.finish();
